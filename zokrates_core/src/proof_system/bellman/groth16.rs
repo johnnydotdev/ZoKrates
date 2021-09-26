@@ -15,7 +15,7 @@ use crate::proof_system::bellman::{parse_fr, parse_g1, parse_g2};
 use crate::proof_system::groth16::{ProofPoints, VerificationKey, G16};
 use crate::proof_system::Scheme;
 
-const G16_WARNING: &str = "WARNING: You are using the G16 scheme which is subject to malleability. See zokrates.github.io/toolbox/proving_schemes.html#g16-malleability for implications.";
+const G16_WARNING: &str = "WARNING: You are using the G16 scheme which is subject to malleability. See https://zokrates.github.io/toolbox/proving_schemes.html?highlight=malleability#g16-malleability for implications.";
 
 impl<T: Field + BellmanFieldExtensions> Backend<T, G16> for Bellman {
     fn generate_proof(
